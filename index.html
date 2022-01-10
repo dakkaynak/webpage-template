@@ -1,258 +1,261 @@
-<!DOCTYPE html><script src="http://www.google.com/jsapi" type="text/javascript"></script> 
-<script type="text/javascript">google.load("jquery", "1.3.2");</script>
+<!DOCTYPE html>
+<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+<script type="text/javascript">
+    google.load("jquery", "1.3.2");
+</script>
 <style type="text/css">
-   body {
-   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-   font-weight:300;
-   font-size:18px;
-   margin-left: auto;
-   margin-right: auto;
-   width: 1100px;
-   }
-   h1 {
-   font-size:32px;
-   font-weight:300;
-   }
-   .disclaimerbox {
-   background-color: #eee;		
-   border: 1px solid #eeeeee;
-   border-radius: 10px ;
-   -moz-border-radius: 10px ;
-   -webkit-border-radius: 10px ;
-   padding: 20px;
-   }
-   video.header-vid {
-   height: 140px;
-   border: 1px solid black;
-   border-radius: 10px ;
-   -moz-border-radius: 10px ;
-   -webkit-border-radius: 10px ;
-   }
-   img.header-img {
-   height: 140px;
-   border: 1px solid black;
-   border-radius: 10px ;
-   -moz-border-radius: 10px ;
-   -webkit-border-radius: 10px ;
-   }
-   img.rounded {
-   border: 1px solid #eeeeee;
-   border-radius: 10px ;
-   -moz-border-radius: 10px ;
-   -webkit-border-radius: 10px ;
-   }
-   a:link,a:visited
-   {
-   color: #1367a7;
-   text-decoration: none;
-   }
-   a:hover {
-   color: #208799;
-   }
-   td.dl-link {
-   height: 160px;
-   text-align: center;
-   font-size: 22px;
-   }
-   .layered-paper-big { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
-   box-shadow:
-   0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
-   5px 5px 0 0px #fff, /* The second layer */
-   5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
-   10px 10px 0 0px #fff, /* The third layer */
-   10px 10px 1px 1px rgba(0,0,0,0.35), /* The third layer shadow */
-   15px 15px 0 0px #fff, /* The fourth layer */
-   15px 15px 1px 1px rgba(0,0,0,0.35), /* The fourth layer shadow */
-   20px 20px 0 0px #fff, /* The fifth layer */
-   20px 20px 1px 1px rgba(0,0,0,0.35), /* The fifth layer shadow */
-   25px 25px 0 0px #fff, /* The fifth layer */
-   25px 25px 1px 1px rgba(0,0,0,0.35); /* The fifth layer shadow */
-   margin-left: 10px;
-   margin-right: 45px;
-   }
-   .paper-big { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
-   box-shadow:
-   0px 0px 1px 1px rgba(0,0,0,0.35); /* The top layer shadow */
-   margin-left: 10px;
-   margin-right: 45px;
-   }
-   .layered-paper { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
-   box-shadow:
-   0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
-   5px 5px 0 0px #fff, /* The second layer */
-   5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
-   10px 10px 0 0px #fff, /* The third layer */
-   10px 10px 1px 1px rgba(0,0,0,0.35); /* The third layer shadow */
-   margin-top: 5px;
-   margin-left: 10px;
-   margin-right: 30px;
-   margin-bottom: 5px;
-   }
-   .vert-cent {
-   position: relative;
-   top: 50%;
-   transform: translateY(-50%);
-   }
-   hr
-   {
-   border: 0;
-   height: 1px;
-   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
-   }
+    body {
+        font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+        font-weight: 300;
+        font-size: 18px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 1100px;
+    }
+    h1 {
+        font-size: 32px;
+        font-weight: 300;
+    }
+    .disclaimerbox {
+        background-color: #eee;
+        border: 1px solid #eeeeee;
+        border-radius: 10px;
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+        padding: 20px;
+    }
+    video.header-vid {
+        height: 140px;
+        border: 1px solid black;
+        border-radius: 10px;
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+    }
+    img.header-img {
+        height: 140px;
+        border: 1px solid black;
+        border-radius: 10px;
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+    }
+    img.rounded {
+        border: 1px solid #eeeeee;
+        border-radius: 10px;
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+    }
+    a:link,
+    a:visited {
+        color: #1367a7;
+        text-decoration: none;
+    }
+    a:hover {
+        color: #208799;
+    }
+    td.dl-link {
+        height: 160px;
+        text-align: center;
+        font-size: 22px;
+    }
+    .layered-paper-big {
+        /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+        box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.35), /* The top layer shadow */ 5px 5px 0 0px #fff, /* The second layer */ 5px 5px 1px 1px rgba(0, 0, 0, 0.35), /* The second layer shadow */ 10px 10px 0 0px #fff,
+            /* The third layer */ 10px 10px 1px 1px rgba(0, 0, 0, 0.35), /* The third layer shadow */ 15px 15px 0 0px #fff, /* The fourth layer */ 15px 15px 1px 1px rgba(0, 0, 0, 0.35), /* The fourth layer shadow */ 20px 20px 0 0px #fff,
+            /* The fifth layer */ 20px 20px 1px 1px rgba(0, 0, 0, 0.35), /* The fifth layer shadow */ 25px 25px 0 0px #fff, /* The fifth layer */ 25px 25px 1px 1px rgba(0, 0, 0, 0.35); /* The fifth layer shadow */
+        margin-left: 10px;
+        margin-right: 45px;
+    }
+    .paper-big {
+        /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+        box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.35); /* The top layer shadow */
+        margin-left: 10px;
+        margin-right: 45px;
+    }
+    .layered-paper {
+        /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+        box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.35), /* The top layer shadow */ 5px 5px 0 0px #fff, /* The second layer */ 5px 5px 1px 1px rgba(0, 0, 0, 0.35), /* The second layer shadow */ 10px 10px 0 0px #fff,
+            /* The third layer */ 10px 10px 1px 1px rgba(0, 0, 0, 0.35); /* The third layer shadow */
+        margin-top: 5px;
+        margin-left: 10px;
+        margin-right: 30px;
+        margin-bottom: 5px;
+    }
+    .vert-cent {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    hr {
+        border: 0;
+        height: 1px;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    }
 </style>
 
-
-
-
-
-
 <html>
-   <head>
-      <title>Sea-thru</title>
-      <meta property="og:image" content="Path to my teaser.png"/>
-      <!-- Facebook automatically scrapes this. Go to https://developers.facebook.com/tools/debug/ if you update and want to force Facebook to rescrape. -->
-      <meta property="og:title" content="Creative and Descriptive Paper Title." />
-      <meta property="og:description" content="Paper description." />
-      <!-- Get from Google Analytics -->
-      <!-- Global site tag (gtag.js) - Google Analytics -->
-      <script async src=""></script> 
-      <script>
-         window.dataLayer = window.dataLayer || [];
-         function gtag(){dataLayer.push(arguments);}
-         gtag('js', new Date());
-         
-         gtag('config', 'UA-75863369-6');
-      </script>
-   </head>
-   <body>
-      <br>
-      <center>
-         <span style="font-size:36px">Sea-thru: A Method for Removing Water From Underwater Images</span>
-         <table align=center width=600px>
-            <table align=center width=600px>
-               <tr>
-                  <td align=center width=100px>
-                     <center>
-                        <span style="font-size:24px"><a href="www.deryaakkaynak.com">Derya Akkaynak</a></span>
-                     </center>
-                  </td>
-                  <td align=center width=100px>
-                     <center>
-                        <span style="font-size:24px"><a href="">Tali Treibitz</a></span>
-                     </center>
-                  </td>
-               </tr>
+    <head>
+        <title>Sea-thru</title>
+        <meta property="og:image" content="Path to my teaser.png" />
+        <!-- Facebook automatically scrapes this. Go to https://developers.facebook.com/tools/debug/ if you update and want to force Facebook to rescrape. -->
+        <meta property="og:title" content="Creative and Descriptive Paper Title." />
+        <meta property="og:description" content="Paper description." />
+        <!-- Get from Google Analytics -->
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src=""></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+
+            gtag("config", "UA-75863369-6");
+        </script>
+    </head>
+    <body>
+        <br />
+        <center>
+            <span style="font-size: 36px;">Sea-thru: A Method for Removing Water From Underwater Images</span>
+            <table align="center" width="600px">
+                <table align="center" width="600px">
+                    <tr>
+                        <td align="center" width="100px">
+                            <center>
+                                <span style="font-size: 24px;"><a href="www.deryaakkaynak.com">Derya Akkaynak</a></span>
+                            </center>
+                        </td>
+                        <td align="center" width="100px">
+                            <center>
+                                <span style="font-size: 24px;"><a href="">Tali Treibitz</a></span>
+                            </center>
+                        </td>
+                    </tr>
+                </table>
+                <table align="center" width="100px">
+                    <tr>
+                        <td align="center" width="150px">
+                            <center>
+                                <span style="font-size: 24px;"><a href="https://openaccess.thecvf.com/content_CVPR_2019/html/Akkaynak_Sea-Thru_A_Method_for_Removing_Water_From_Underwater_Images_CVPR_2019_paper.html">[Paper]</a></span>
+                            </center>
+                        </td>
+                        <td align="center" width="150px">
+                            <center>
+                                <span style="font-size: 24px;"><a href="">[Poster]</a></span><br />
+                            </center>
+                        </td>
+                        <td align="center" width="150px">
+                            <center>
+                                <span style="font-size: 24px;"><a href="">[Demo]</a></span><br />
+                            </center>
+                        </td>
+                        <td align="center" width="150px">
+                            <center>
+                                <span style="font-size: 24px;"><a href="">[Data]</a></span><br />
+                            </center>
+                        </td>
+                        <td align="center" width="150px">
+                            <center>
+                                <span style="font-size: 24px;"><a href="./resources/bibtex.txt">[Bibtex]</a></span><br />
+                            </center>
+                        </td>
+                    </tr>
+                </table>
             </table>
-            <table align=center width=100px>
-               <tr>
-                  <td align=center width=150px>
-                     <center>
-                        <span style="font-size:24px"><a href='https://openaccess.thecvf.com/content_CVPR_2019/html/Akkaynak_Sea-Thru_A_Method_for_Removing_Water_From_Underwater_Images_CVPR_2019_paper.html'>[Paper]</a></span>
-                     </center>
-                  </td>
-                  <td align=center width=150px>
-                     <center>
-                        <span style="font-size:24px"><a href=''>[Poster]</a></span><br>
-                     </center>
-                  </td>
-                  <td align=center width=150px>
-                     <center>
-                        <span style="font-size:24px"><a href=''>[Demo]</a></span><br>
-                     </center>
-                  </td>
-                  <td align=center width=150px>
-                     <center>
-                        <span style="font-size:24px"><a href=''>[Data]</a></span><br>
-                     </center>
-                  </td>
-                  <td align=center width=150px>
-                     <center>
-                        <span style="font-size:24px"><a href='./resources/bibtex.txt'>[Bibtex]</a></span><br>
-                     </center>
-                  </td>
-                  
-               </tr>
+        </center>
+        <center>
+            <table align="center" width="850px">
+                <tr>
+                    <td width="1100">
+                        <center>
+                            <img class="round" style="width: 1100px;" src="./resources/teaser2.jpg" />
+                        </center>
+                    </td>
+                </tr>
             </table>
-         </table>
-      </center>
-      <center>
-         <table align=center width=850px>
+            <table align="center" width="850px">
+                <tr></tr>
+            </table>
+        </center>
+        <hr />
+        <table align="center" width="850px">
+            <center>
+                <h1>Abstract</h1>
+            </center>
             <tr>
-               <td width=1100>
-                  <center>
-                     <img class="round" style="width:1100px" src="./resources/teaser2.jpg"/>
-                  </center>
-               </td>
+                <td>
+                    Robust recovery of lost colors in underwater images remains a challenging problem. We recently showed that this was partly due to the prevalent use of an atmospheric image formation model for underwater images. We
+                    proposed a physically accurate model that explicitly showed: 1) the attenuation coefficient of the signal is not uniform across the scene but depends on object range and reflectance, 2) the coefficient governing the
+                    increase in backscatter with distance differs from the signal attenuation coefficient. Here, we present a method that recovers color with the revised model using RGBD images. The Sea-thru method first calculates
+                    backscatter using the darkest pixels in the image and their known range information. Then, it uses an estimate of the spatially varying illuminant to obtain the range-dependent attenuation coefficient. Using more than
+                    1,100 images from two optically different water bodies, which we make available, we show that our method outperforms those using the atmospheric model. Consistent removal of water will open up large underwater datasets
+                    to powerful computer vision and machine learning algorithms, creating exciting opportunities for the future of underwater exploration and conservation.
+                </td>
             </tr>
-         </table>
-         <table align=center width=850px>
+        </table>
+        <br />
+        <hr />
+
+        <table align="center" width="850px">
+            <center><h1>Poster</h1></center>
             <tr>
-            
-         </tr>
-         </table>
-      </center>
-      <hr>
-      <table align=center width=850px>
-         <center>
-            <h1>Abstract</h1>
-         </center>
-         <tr>
-            <td>
-               Robust recovery of lost colors in underwater images remains a challenging problem. We recently showed that this was partly due to the prevalent use of an atmospheric image formation model for underwater images. We proposed a physically accurate model that explicitly showed: 1) the attenuation coefficient of the signal is not uniform across the scene but depends on object range and reflectance, 2) the coefficient governing the increase in backscatter with distance differs from the signal attenuation coefficient. Here, we present a method that recovers color with the revised model using RGBD images. The Sea-thru method first calculates backscatter using the darkest pixels in the image and their known range information. Then, it uses an estimate of the spatially varying illuminant to obtain the range-dependent attenuation coefficient. Using more than 1,100 images from two optically different water bodies, which we make available, we show that our method outperforms those using the atmospheric model. Consistent removal of water will open up large underwater datasets to powerful computer vision and machine learning algorithms, creating exciting opportunities for the future of underwater exploration and conservation.
-            </td>
-         </tr>
-      </table>
-      <br>
-      <hr>
-      
-      <table align=center width=850px>
-         <center><h1>Poster</h1></center>
-         <tr>
-            <td align=center width=800px>
-               <center><td><img class="round" style="width:800px" src="./resources/poster_full.jpg"/></td></center>
-            </td>
-         </tr>
-     
-      
-         <tr>
-         	<td align=center width=800px>
-         		<center><td>Download full resolution poster file from <a href="./resources/poster_full.pdf">here</a> (13.8MB). </td>
-         	</td>
-         </tr>
-    	</table>
-    	<br>
-      	<hr>
-         
-        <table align=center width=850px>
-         <center> <h1>Demo</h1></center>
-         <tr>
-         <p align="center">
-           <iframe width="560" height="315" src="https://www.youtube.com/embed/O7s2Yw7WFRs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-           </p>
-           </tr>
-           <tr>
-         	<td align=center width=800px>
-         	<center><td>We recorded this demo for <a href="https://eccv2020.eu/">ECCV2020</a> which was fully virtual.</td>
-         	</td>
-         </tr>
-           
-  </table>
-  <br>
-      	<hr>
-  
-      <br>
-      <table align=center width=900px>
-         <tr>
-            <td width=400px>
-               <left>
-                  <center>
-                     <h1>Acknowledgements</h1>
-                  </center>
-                  This template was originally made by <a href="http://web.mit.edu/phillipi/">Phillip Isola</a> and <a href="http://richzhang.github.io/">Richard Zhang</a> for a <a href="http://richzhang.github.io/colorization/">colorful</a> ECCV project; the code can be found <a href="https://github.com/richzhang/webpage-template">here</a>.
-               </left>
-            </td>
-         </tr>
-      </table>
-      <br>
-   </body>
+                <td align="center" width="800px">
+                    <center>
+                        <td><img class="round" style="width: 800px;" src="./resources/poster_full.jpg" /></td>
+                    </center>
+                </td>
+            </tr>
+
+            <tr>
+                <td align="center" width="800px">
+                    <center>
+                        <td>Download full resolution poster file from <a href="./resources/poster_full.pdf">here</a> (13.8MB).</td>
+                    </center>
+                </td>
+            </tr>
+        </table>
+        <br />
+        <hr />
+
+        <table align="center" width="850px">
+            <center><h1>Demo</h1></center>
+            <tr>
+                <p align="center">
+                    <iframe
+                        width="560"
+                        height="315"
+                        src="https://www.youtube.com/embed/O7s2Yw7WFRs"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                    ></iframe>
+                </p>
+            </tr>
+            <tr>
+                <td align="center" width="800px">
+                    <center>
+                        <td>We recorded this demo for <a href="https://eccv2020.eu/">ECCV2020</a> which was fully virtual.</td>
+                    </center>
+                </td>
+            </tr>
+        </table>
+        <br />
+        <hr />
+
+        <br />
+        <table align="center" width="900px">
+            <tr>
+                <td width="400px">
+                    <left>
+                        <center>
+                            <h1>Acknowledgements</h1>
+                        </center>
+                        This template was originally made by <a href="http://web.mit.edu/phillipi/">Phillip Isola</a> and <a href="http://richzhang.github.io/">Richard Zhang</a> for a
+                        <a href="http://richzhang.github.io/colorization/">colorful</a> ECCV project; the code can be found <a href="https://github.com/richzhang/webpage-template">here</a>.
+                    </left>
+                </td>
+            </tr>
+        </table>
+        <br />
+    </body>
 </html>

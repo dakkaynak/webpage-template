@@ -1,0 +1,7 @@
+@InProceedings{Akkaynak_2019_CVPR,
+author = {Akkaynak, Derya and Treibitz, Tali},
+title = {Sea-Thru: A Method for Removing Water From Underwater Images},
+booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+month = {June},
+year = {2019}
+}

@@ -1,7 +1,0 @@
-@inproceedings{akkaynak2019sea,
-  title={Sea-thru: A method for removing water from underwater images},
-  author={Akkaynak, Derya and Treibitz, Tali},
-  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
-  pages={1682--1691},
-  year={2019}
-}
